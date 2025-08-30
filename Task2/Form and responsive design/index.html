@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">My Website</h1>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>Building fully responsive layouts with HTML, CSS (Flexbox + Grid), and JavaScript.</p>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About This Project</h2>
+    <p>This demo showcases a fully responsive webpage layout including navigation, content, and a contact form. Resize the window to see how the design adapts!</p>
+  </section>
+
+  <main class="grid-layout">
+    <section class="content">
+      <h2>Our Services</h2>
+      <p>We focus on creating responsive, user-friendly, and modern web applications using the latest technologies.</p>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2>Contact Us</h2>
+      <form id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="error-msg"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 My Website | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
