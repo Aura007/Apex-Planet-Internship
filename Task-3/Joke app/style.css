@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.joke-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#joke-box {
+  background: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  min-height: 100px;
+}
+#setup {
+  font-size: 18px;
+  font-weight: bold;
+}
+#punchline {
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+button {
+  margin: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#getJokeBtn {
+  background: #007bff;
+  color: white;
+}
+#getJokeBtn:hover {
+  background: #0056b3;
+}
+#showPunchlineBtn {
+  background: #28a745;
+  color: white;
+}
+#showPunchlineBtn:hover {
+  background: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .joke-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #setup, #punchline {
+    font-size: 16px;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+  #setup, #punchline {
+    font-size: 14px;
+  }
+}
