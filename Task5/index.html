@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aura Shanagonda — Cybersecurity Analyst • Pen Tester</title>
+  <meta name="description" content="Aura Shanagonda — Cybersecurity Analyst, Penetration Tester. Portfolio showcasing projects, skills, experience and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- JSON-LD for hiring tools / HR -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Aura Shanagonda",
+    "jobTitle": "Cybersecurity Analyst",
+    "url": "https://your-portfolio.example.com",
+    "sameAs": [
+      "https://linkedin.com/in/aurashanagonda",
+      "https://github.com/Aura007"
+    ],
+    "email": "mailto:auragen2030@email.com",
+    "telephone": "+91-8106470642",
+    "description": "Cybersecurity Analyst | Penetration Tester | Vulnerability Assessment Specialist"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Aura Shanagonda<span class="logo-dot"></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainMenu">Menu</button>
+        <ul id="mainMenu" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Aura <span class="accent">Shanagonda</span></h1>
+        <p class="subtitle">Cybersecurity Analyst & Penetration Tester — I find the gaps so teams can fix them fast.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">See Work</a>
+          <a class="btn btn-outline" id="resumeBtn" href="Aura_Shanagonda_CS.pdf" download>Download Resume</a>
+
+        </div>
+
+        <ul class="mini-contact">
+          <li><strong>Email</strong> <a href="mailto:auragen2030@email.com">auragen2030@email.com</a></li>
+          <li><strong>Location</strong> Hyderabad, India</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <!-- Tilt card with gradient border + glass -->
+        <div class="tilt-card" data-tilt>
+          <div class="card-inner">
+            <svg class="shield" viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <linearGradient id="lg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#06b6d4"/>
+                  <stop offset="1" stop-color="#7c3aed"/>
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="45" fill="url(#lg)" opacity="0.08"></circle>
+              <path d="M50 10 L70 30 L60 70 L40 70 L30 30 Z" fill="#ffffff" opacity="0.9"></path>
+            </svg>
+
+            <div class="card-content">
+              <h3>Security Highlights</h3>
+              <ul>
+                <li>VAPT across web & network platforms</li>
+                <li>Secure reporting (MITRE ATT&CK mapping)</li>
+                <li>Tools: Burp, Nmap, Metasploit, ffuf</li>
+              </ul>
+              <a class="small-link" href="#contact">Hire / Contact →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a results-oriented security analyst who performs actionable penetration tests and produces remediation-ready reports. I love automating repetitive tasks and building PoCs to demonstrate risk.</p>
+          <p class="muted">Specialties: Web VAPT, API security, network enumeration, exploit proof-of-concepts and security automation.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>50+</strong>
+            <small>Vulnerabilities Identified</small>
+          </div>
+          <div class="stat">
+            <strong>95%</strong>
+            <small>Remediation Rate</small>
+          </div>
+          <div class="stat">
+            <strong>2+</strong>
+            <small>Years Experience</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <div class="projects-head">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <!-- project card (repeatable) -->
+        <article class="project" data-category="web">
+          <img class="proj-img" data-src="assets/inshorts-clone-screenshot.jpg" alt="Inshorts clone screenshot" loading="lazy">
+          <div class="proj-body">
+            <h3>Inshorts Clone — Secure MERN</h3>
+            <p>React frontend + Node API with auth, rate limiting and secure headers.</p>
+            <div class="proj-meta"><span>React • Node • MongoDB</span></div>
+            <div class="proj-cta">
+              <a class="link" href="https://github.com/Aura007/inshorts-clone" target="_blank" rel="noopener">GitHub</a>
+              <button class="btn-link" data-project="inshorts">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-category="java">
+          <img class="proj-img" data-src="assets/secure-atm-screenshot.jpg" alt="Secure ATM" loading="lazy">
+          <div class="proj-body">
+            <h3>Secure ATM System</h3>
+            <p>Banking simulation focusing on secure storage, prepared statements and encryption.</p>
+            <div class="proj-meta"><span>Java • MySQL • Crypto</span></div>
+            <div class="proj-cta"><button class="btn-link" data-project="atm">Details</button></div>
+          </div>
+        </article>
+
+        <article class="project" data-category="tools">
+          <img class="proj-img" data-src="assets/subraider-screenshot.jpg" alt="SubRaider subdomain tool" loading="lazy">
+          <div class="proj-body">
+            <h3>SubRaider — Subdomain Recon Tool</h3>
+            <p>Automated suite for subdomain discovery, resolution checks and takeover detection.</p>
+            <div class="proj-meta"><span>Python • dnsx • waybackurls</span></div>
+            <div class="proj-cta"><button class="btn-link" data-project="subraider">Details</button></div>
+          </div>
+        </article>
+
+        <!-- add more project cards as needed -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <svg viewBox="0 0 36 36" class="radial" data-value="90" aria-hidden="true">
+            <path class="bg" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <path class="meter" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <text x="18" y="20.35" class="percent">90%</text>
+          </svg>
+          <h4>Web Security</h4>
+        </div>
+
+        <div class="skill-card">
+          <svg viewBox="0 0 36 36" class="radial" data-value="80" aria-hidden="true">
+            <path class="bg" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <path class="meter" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <text x="18" y="20.35" class="percent">80%</text>
+          </svg>
+          <h4>Tooling & Automation</h4>
+        </div>
+
+        <div class="skill-card">
+          <svg viewBox="0 0 36 36" class="radial" data-value="75" aria-hidden="true">
+            <path class="bg" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <path class="meter" d="M18 2.0845a15.9155 15.9155 0 1 0 0 31.831 15.9155 15.9155 0 1 0 0-31.831"/>
+            <text x="18" y="20.35" class="percent">75%</text>
+          </svg>
+          <h4>Programming</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TIMELINE -->
+    <section id="experience" class="experience container">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <time>Feb 2025 – Present</time>
+          <div>
+            <h3>Penetration Tester (Intern) — SURE TRUST</h3>
+            <p>VAPT across web apps and networks; detailed reporting and PoCs.</p>
+          </div>
+        </li>
+
+        <li>
+          <time>Oct 2023 – Nov 2023</time>
+          <div>
+            <h3>Penetration Tester (Intern) — YHills</h3>
+            <p>Auth bypass PoC development and mitigation plans.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrap">
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" required>
+
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" required>
+
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="button" id="mailtoFallback">Email Me</button>
+          </div>
+
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-side">
+          <h4>Let's collaborate</h4>
+          <p>Open to remote & onsite opportunities. I respond quickly on LinkedIn.</p>
+          <ul class="socials">
+            <li><a href="https://linkedin.com/in/aurashanagonda" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Aura007" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Aura Shanagonda — Built for hiring managers & engineering teams.</small>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
